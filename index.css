@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+a {
+  color: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: hsl(252, 30%, 10%);;
+  overflow-x: hidden;
+}
+
+.main {
+  height: 85vh;
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 30vw auto 30vw;
+}
+
+.main .profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .profile-image .outer-ring {
+  width: 40rem;
+  height: 40rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 1rem;
+  position: relative;
+}
+
+.main .profile-image .outer-ring .inner-ring {
+  width: 30rem;
+  height: 30rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  background: url('./images/david-essien.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.main .profile-image .outer-ring .circle{
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.circle-1{
+  top: -1rem;
+}
+
+.circle-2{
+  bottom: 12rem;
+  right: 0.2rem;
+}
+
+.circle-3{
+  bottom: 12rem;
+  left: 0.2rem;
+}
+
+.main .intro,
+.main .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main .intro {
+  text-align: right;
+  padding-left: 5rem;
+}
+
+.main .intro h1 {
+  font-size: 6rem;
+}
+
+.main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+nav a{
+  padding: 0 1rem;
+}
